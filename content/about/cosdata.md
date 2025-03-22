@@ -2,7 +2,7 @@
 title = ""
 subtitle = ""
 description = ""
-weight = 0
+weight = 1
 
 [extra]
 type="Professional Experience"
