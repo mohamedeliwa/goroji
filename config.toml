@@ -18,7 +18,7 @@ taxonomies = [{ name = "tags" }]
 highlight_code = true
 
 [extra]
-favicon = "latex.svg"
+favicon = "./latex.svg"
 # Put all your custom variables here
 # Sets the color theme for the blog.
 theme = "toggle"
