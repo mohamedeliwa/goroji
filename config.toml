@@ -28,6 +28,7 @@ socials = [
     # Configure socials here
     { name = "github", url = "https://github.com/mohamedeliwa", icon = "github" },
     { name = "linkedin", url = "https://www.linkedin.com/in/mohammedredaa/", icon = "linkedin" },
+    { name = "email", url = "mailto:contact@goroji.com", icon = "email", target = "_self" },
 ]
 menu = [
     # Configure menu bar here
