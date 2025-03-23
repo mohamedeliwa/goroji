@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://mohamedeliwa.github.io/goroji/"
+base_url = "https://goroji.com/"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -18,7 +18,7 @@ taxonomies = [{ name = "tags" }]
 highlight_code = true
 
 [extra]
-favicon = "/goroji/latex.svg"
+favicon = "/latex.svg"
 # Put all your custom variables here
 # Sets the color theme for the blog.
 theme = "toggle"
