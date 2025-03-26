@@ -68,12 +68,15 @@
          {% endif %}
     {% endif %}
 
+    {% if config.extra.og_image %}
+        <meta name="image" content={{ config.base_url }}{{ config.extra.og_image }}>
+        <meta property="og:image" content={{ config.base_url }}{{ config.extra.og_image }}>
+        <meta name="twitter:image" content={{ config.base_url }}{{ config.extra.og_image }}>
+    {% endif %}
+
     {# Favicon #}
     {% if config.extra.favicon %}
         <link rel="icon" type="image/png" href={{ config.extra.favicon }} />
-        <meta name="image" content={{ config.base_url }}{{ config.extra.favicon }}>
-        <meta property="og:image" content={{ config.base_url }}{{ config.extra.favicon }}>
-        <meta name="twitter:image" content={{ config.base_url }}{{ config.extra.favicon }}>
     {% endif %}
 
     {# Font from cdn or disk #}
