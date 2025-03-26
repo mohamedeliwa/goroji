@@ -1,5 +1,6 @@
 +++
 title= "Hi there!"
+description = "Welcome to Goroji's website. Discover my work, skills, and projects. Connect, explore, and learn more about what I do."
 template = "homepage.html"
 +++
 
