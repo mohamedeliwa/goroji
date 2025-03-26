@@ -44,13 +44,15 @@
     </title>
 
         {% if not page_has_og_title %}
-            <meta property="og:title" content="{% if page.title -%}{{ page.title }}{% elif config.title -%}{{ config.title }}{% else -%}Post{% endif -%}" />
+            <meta property="og:title" content="{% if page.title -%}{{ page.title }}{% elif section.title %}{{ config.title }} | {{ section.title }}{% elif config.title -%}{{ config.title }}{% else -%}Post{% endif -%}" />
         {% endif %}
      {% endif %}
 
      {% if not page_has_og_description %}
          {% if page.description %}
              <meta property="og:description" content="{{ page.description }}" />
+         {% elif section.description %}
+             <meta property="og:description" content="{{ section.description }}" />
          {% elif config.description %}
              <meta property="og:description" content="{{ config.description }}" />
          {% endif %}
@@ -59,6 +61,8 @@
      {% if not page_has_description %}
          {% if page.description %}
              <meta name="description" content="{{ page.description }}" />
+         {% elif section.description %}
+             <meta property="og:description" content="{{ section.description }}" />
          {% elif config.description %}
              <meta name="description" content="{{ config.description }}" />
          {% endif %}
@@ -67,6 +71,9 @@
     {# Favicon #}
     {% if config.extra.favicon %}
         <link rel="icon" type="image/png" href={{ config.extra.favicon }} />
+        <meta name="image" content={{ config.extra.favicon }}>
+        <meta property="og:image" content={{ config.extra.favicon }}>
+        <meta name="twitter:image" content={{ config.extra.favicon }}>
     {% endif %}
 
     {# Font from cdn or disk #}
