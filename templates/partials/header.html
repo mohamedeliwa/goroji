@@ -71,9 +71,9 @@
     {# Favicon #}
     {% if config.extra.favicon %}
         <link rel="icon" type="image/png" href={{ config.extra.favicon }} />
-        <meta name="image" content={{ config.extra.favicon }}>
-        <meta property="og:image" content={{ config.extra.favicon }}>
-        <meta name="twitter:image" content={{ config.extra.favicon }}>
+        <meta name="image" content={{ config.base_url }}{{ config.extra.favicon }}>
+        <meta property="og:image" content={{ config.base_url }}{{ config.extra.favicon }}>
+        <meta name="twitter:image" content={{ config.base_url }}{{ config.extra.favicon }}>
     {% endif %}
 
     {# Font from cdn or disk #}
