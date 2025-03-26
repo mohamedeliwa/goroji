@@ -1,5 +1,6 @@
 +++
 title = "About me"
+description = "Explore my resume, skills, and experience. Connect for collaboration and opportunities."
 template = "about.html"
 sort_by = "weight"
 +++
